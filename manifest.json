@@ -1,0 +1,38 @@
+{
+  "name": "JLF微信公众号信息统计小助手",
+  "manifest_version": 2,
+  "version": "2.0",
+  "description": "本插件用于微信公众号首页信息的统计,本人开发完全是为了工作所需要,请勿用于非法用途,造成的后果与本人无关！--作者:江凌峰",
+  "browser_action": {
+    "default_icon": "ico.png",
+    "default_title": "江凌峰微信后台统计小助手",
+    "default_popup":"popup.html"
+  },
+  "permissions": [
+    "*://*.weixin.qq.com/*"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "/content/js/jquery-3.3.1.min.js",
+        "/content/js/layer.js",
+        "/content/js/common.js",
+        "/content/js/UserInfo.js",
+        "/content/js/ArticleInfo.js",
+        "/content/js/LiuLiangZhu.js",
+        "/content/js/TuWenInfo.js",
+        "/content/js/app.js"
+      ],
+      "css": [
+        "/content/css/bootstrap.min.css",
+        "/content/css/app.css",
+        "/content/css/theme/default/layer.css"
+
+      ],
+      "matches": [
+        "*://*.weixin.qq.com/cgi-bin/home*"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}

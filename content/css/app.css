@@ -1,0 +1,13 @@
+.JLFBtn{
+    position: relative;
+}
+#MyDesc{
+    font-family:'Microsoft Yahei' 'Helvetica Neue', 'Helvetica', sans-serif;
+    color:black;
+   font-size: 17px;
+   font-style: inherit;
+}
+.JLFTableBtn{
+    margin-left: 10px;
+}
+
